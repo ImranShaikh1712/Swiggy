@@ -1,0 +1,51 @@
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff5200;
+            padding: 15px 30px;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            transition: all 0.3s ease-in-out;
+        }
+        .nav-link:hover {
+            transform: scale(1.1);
+            color: #ffcc00;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 10;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .food-item {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+        .food-image {
+            height: 120px;
+            width: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .food-title {
+            margin-top: 8px;
+            font-weight: bold;} 

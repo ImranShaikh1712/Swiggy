@@ -1,0 +1,115 @@
+/* General Styling */
+.signin-content {
+    max-width: 400px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.signin-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-left: 5px solid #ff6600;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+/* Form Styling */
+.signin-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.signin-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(255, 102, 0, 0.3);
+}
+
+.signin-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #333;
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.signin-form input:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+/* Remember Me & Forgot Password */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.remember-forgot a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.remember-forgot a:hover {
+    color: #cc5200;
+}
+
+/* Sign In Button */
+.signin-btn {
+    background: linear-gradient(to right, #ff6600, #ff8533);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.signin-btn:hover {
+    background: #ff6600;
+    transform: scale(1.05);
+}
+
+/* Sign Up Link */
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signin-content {
+        padding: 20px;
+    }
+}

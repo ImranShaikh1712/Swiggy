@@ -1,0 +1,116 @@
+/* Cart Container */
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Section */
+.cart-content {
+    width: 55%;
+    padding: 20px;
+}
+
+.cart-title {
+    font-size: 22px;
+    font-weight: bold;
+    border-left: 4px solid #ff6600;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* Cart Items */
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Product Images */
+.product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.item-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.quantity-controls button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Payment Section */
+.payment-content {
+    width: 40%;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.payment-title {
+    font-size: 22px;
+    font-weight: bold;
+    border-left: 4px solid #ff6600;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.payment-details p {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.pay-now {
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-now:hover {
+    background: #e65c00;
+}

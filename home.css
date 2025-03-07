@@ -1,0 +1,74 @@
+/* General Layout */
+.home-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: black; /* Fixed missing semicolon */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-left: 5px solid #ff6600;
+    padding-left: 10px;
+}
+
+/* Card Styling */
+.restaurant-card, .city-card, .cuisine-card, .explore-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.restaurant-card:hover, .city-card:hover, .cuisine-card:hover, .explore-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 102, 0, 0.3);
+}
+
+/* Image Styling */
+.restaurant-card img, .city-card img, .cuisine-card img, .explore-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Title Styling */
+.restaurant-name, .city-name, .cuisine-name, .explore-name {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    color: #333;
+    background: linear-gradient(to right, #ff6600, #ff8533);
+    color: white;
+    text-transform: uppercase;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Hover Animation */
+.restaurant-name:hover, .city-name:hover, .cuisine-name:hover, .explore-name:hover {
+    background: #ff6600;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
